@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">News letter</a></li>
+                <li><a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdo70NIxeLLwavU42Qg8jyeKejNqtqY4Za15AEVOmkJeqDwtA/viewform?usp=sf_link">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's what<br><span>i like</span></h2>
+                <p>Explore scents from rare and exquisite oils and blends that will make an impression every single
+                    time. Find your personal Scent that makes you stand out from the crowd.At our perfume house, we
+                    believe that luxury should be accessible to all, and that is why we are committed to using only the
+                    highest quality ingredients, sourced from the finest suppliers from around the world. We take pride
+                    in the fact that our fragrances are made with a high percentage of natural ingredients, and that we
+                    are committed to sustainability and ethical practices.!</p>
+                <a href="#">view all Product</a>
+            </div>
+            <div class="imgBox">
+                <img src="oud.png" class="oud">
+            </div>
+        </div>
+        <ul class="oud">
+            <li><img src="oud01.png" onclick="imgSlider('oud01.png');changeBgcolor('#1e1e1e')" </li>
+            <li><img src="oud02.png" onclick="imgSlider('oud02.png');changeBgcolor('#c8c9ad')" </li>
+            <li><img src="oud03.png" onclick="imgSlider('oud03.png');changeBgcolor('#302e2e')" </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100013082411350&mibextid=rS40aB7S9Ucbxw6v"><img
+                        src="facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/11.59.pm._?igsh=ZzE1ZWFzOXJydWkz"><img src="instagram.png"></a></li>
+            <li><a href="https://x.com/Zohai_b21?t=Vyruswt9RP9oRPT0GjkP2A&s=08"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.oud').src = anything;
+        }
+        function changeBgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
